@@ -1,0 +1,429 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*User Directory css*/
+
+:root {
+    --oliveGreen: #4B443C;
+    --burgundy: #4D0011;
+    --gunmetalGray: #53565A;
+    --coolGray: #E4E5E8;
+}
+
+* {
+    border-radius: 6px;
+    background-color: var(--gunmetalGray);
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.notFound {
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+    background-color: var(--burgundy);
+    color: white;
+}
+
+.notFound p {
+    text-align: center;
+    margin: auto;
+    background-color: var(--burgundy);
+    color: white;
+    font-size: 18px;
+}
+
+.landingPage {
+    background-color: var(--burgundy);
+    margin: 20px;
+    padding: 40px;
+    border: 2px solid var(--oliveGreen);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 33px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: var(--burgundy);
+    color: white;
+    margin: 50px auto;
+    text-shadow: .5px .5px var(--oliveGreen);
+    letter-spacing: 3px;
+}
+
+#browseButton {
+    text-align: center;
+    background-color: var(--coolGray);
+    padding: 15px;
+    text-shadow: .5px .5px var(--coolGray);
+    letter-spacing: 2.5px;
+    margin: auto;
+    width: 80%;
+}
+
+.landingPage a {
+    background-color: var(--coolGray);
+    color: var(--burgundy);
+    font-size: 26px;
+    font-weight: bolder;
+    text-decoration: none;
+    text-shadow: .5px .5px var(--oliveGreen);
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: var(--burgundy);
+    color: white;
+    margin: 10px;
+    text-shadow: .5px .5px var(--oliveGreen);
+    letter-spacing: 2.5px;
+}
+
+.userList {
+    margin: 20px auto;
+    border: 1px solid var(--oliveGreen);
+    padding: 15px;
+    width: 300px;
+    background-color: var(--burgundy);
+}
+
+.userCard {
+    border: 2px solid var(--gunmetalGrays);
+    margin: 20px auto;
+    padding: 5px;
+    display: flex;
+    background-color: var(--coolGray);
+}
+
+.userCard ul {
+    flex: 2;
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--coolGray);
+    padding: 5px;
+    text-align: center
+}
+
+.userCard li {
+    background-color: var(--coolGray);
+    width: fit-content;
+    margin: 5px;
+    font-size: 18px;
+    text-align: left;
+    color: var(--burgundy);
+    word-break: break-word;
+}
+
+.userName {
+    font-weight: bold;
+    font-size: 22px;
+    text-shadow: .5px .5px var(--oliveGreen);
+    margin: auto;
+    cursor: pointer;
+}
+
+.userNameButton {
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: .5px .5px var(--oliveGreen);
+    margin: 5px auto;
+    border: none;
+    background-color: var(--coolGray);
+    cursor: pointer;
+    color: var(--burgundy);
+}
+
+.thumbnail {
+    border: 2px solid var(--gunmetalGray);
+    height: 55px;
+    float: right;
+    margin: auto;
+}
+
+.thumbnailContainer {
+    background-color: var(--coolGray);
+    margin: auto;
+}
+
+#currentPage {
+    margin: 3px;
+    background-color: var(--oliveGreen);
+    color: white;
+    text-shadow: .25px .25px var(--burgundy);
+    width: 55px;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.errorContainer {
+    background-color: white;
+    margin: 50px;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+    text-shadow: .5px .25px var(--gunmetalGray);
+    text-transform: uppercase;
+}
+
+.buttonContainer {
+    width: fit-content;
+    margin: 15px auto;
+    display: flex;
+    padding: 5px;
+    background-color: var(--burgundy)
+}
+
+.button {
+    border: 2px solid var(--burgundy);
+    margin: 2px;
+    background-color: var(--coolGray);
+    color: var(--burgundy);
+    width: 54px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#exportButton {
+    width: fit-content;
+    padding: 10px;
+    text-decoration: none;
+}
+
+@media screen and (min-width:761px) {
+    h2 {
+        font-size: 36px;
+    }
+    .userList {
+        width: 450px;
+    }
+    .userCard {
+        width: 90%;
+    }
+    .userCard ul {
+        flex: 2;
+        margin: 10px;
+        height: fit-content;
+        width: fit-content;
+    }
+    .userName {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .mediumImg {
+        border: 2px solid var(--gunmetalGray);
+        height: 80px;
+        margin: 10px;
+    }
+    .mediumImgContainer {
+        background-color: var(--coolGray);
+    }
+    .landingPage {
+        margin: 50px auto;
+        width: 450px;
+    }
+    #beginLinkContainer {
+        margin: auto;
+        width: 70%;
+    }
+    .errorContainer {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .userCard ul {
+        flex: 2;
+    }
+    .userCard li {
+        font-size: 22px;
+    }
+    .userList {
+        width: 650px;
+    }
+    .userCard {
+        width: 90%;
+    }
+    .userCard ul {
+        flex: 2;
+        margin: 10px;
+        height: fit-content;
+        width: fit-content;
+    }
+    #userName {
+        font-weight: bold;
+        font-size: 28px;
+    }
+    h1 {
+        font-size: 44px;
+    }
+    h2 {
+        font-size: 44px;
+    }
+    .landingPage {
+        margin: 50px auto;
+        padding: 50px;
+        width: 650px;
+    }
+    #beginLinkContainer {
+        margin: auto;
+        width: 50%;
+    }
+    .LargeImg {
+        height: 128px;
+        margin: 20px;
+    }
+    .button,
+    #currentPage {
+        width: 70px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .notFound p {
+        font-size: 22px;
+    }
+}
