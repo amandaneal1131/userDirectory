@@ -1,8 +1,18 @@
 import React from "react";
-import SearchResultContainer from "./components/SearchResultContainer";
+import SearchUsers from "./components/SearchUsers";
+import Main from "./components/Main";
+import Container from "./components/Container";
 
 function App() {
-  return <SearchResultContainer />;
+  return (
+    <div> 
+    {/* <SearchUsers /> */}
+    <Container >
+    <Main />
+    </Container>
+  
+    </div>
+  )
 }
 
 export default App;

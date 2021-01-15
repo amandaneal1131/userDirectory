@@ -21,12 +21,12 @@ class SearchUsers extends Component {
         console.log(res)
         this.setState({
           result: res.data.results.map((e, i) => ({
-            firstName: u.name.first,
-            lastName: u.name.last,
-            picture: u.picture.large,
-            email: u.email,
-            phone: u.phone,
-            dob: u.age,
+            firstName: e.name.first,
+            lastName: e.name.last,
+            picture: e.picture.large,
+            email: e.email,
+            phone: e.phone,
+            dob: e.age,
             key: i
           }))
 
@@ -83,8 +83,20 @@ class SearchUsers extends Component {
       [name]: value
 
     });
+  }
+    handleSearchChange = event => {
+      console.log(event.target.value);
+      const filter = event.target.value;
+      const filteredList = this.state.users.filter(item => {
+        let values = Object.values(item)
+            .join("")
+            .toLowerCase();
+          return values.indexOf(filter.toLowerCase()) !== -1;
+          });
+          this.setState({ filteredUsers: filteredList });
+        }
         
-  };
+  // };
 
   render() {
 
@@ -134,4 +146,4 @@ class SearchUsers extends Component {
   }
 }
 
-export default SearchResultContainer;
+export default SearchUsers

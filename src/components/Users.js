@@ -1,10 +1,10 @@
 import React from "react";
 
-function ResultList(props) {
+function Users(props) {
   return (
     <table className="table">
-      {props.results.map(result => (
-        <table style="width:90%">
+      {props.users.map(result => (
+        <table style="width:100%">
           <tr>
             <th>Firstname</th>
             <th>Lastname</th>
@@ -22,4 +22,4 @@ function ResultList(props) {
   );
 }
 
-export default ResultList;
+export default Users;

@@ -24,4 +24,4 @@ function UserCard(props) {
   );
 }
 
-export default UsereCard;
+export default UserCard;
