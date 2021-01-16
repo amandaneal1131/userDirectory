@@ -98,6 +98,7 @@ class SearchUsers extends Component {
         
   // };
 
+// what will show when pulled up at the beginning
   render() {
 
     return (

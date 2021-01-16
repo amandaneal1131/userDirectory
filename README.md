@@ -1,5 +1,6 @@
 
 # EmployeeTracker
+<!-- Note to self:  same as when I hear them say userDirectory -->
 
 # Unit 19 React Homework: Employee Directory
 
