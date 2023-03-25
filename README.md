@@ -1,6 +1,6 @@
 
 # EmployeeTracker
-<!-- Note to self:  same as when I hear them say userDirectory -->
+<!-- Note to self:  samw as when I hear then say UserDirectory -->
 
 # Unit 19 React Homework: Employee Directory
 
